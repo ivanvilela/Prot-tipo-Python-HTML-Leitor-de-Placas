@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placa Detectada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            padding: 5px;
+            background-color: #f4f4f4;
+        }
+        .text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Placa Detectada</h1>
+    <img src="{{ url_for('serve_image', filename=plate_image) }}" alt="Placa Detectada">
+    <div class="text">Texto Reconhecido: {{ plate_text }}</div>
+</body>
+</html>
