@@ -1,4 +1,4 @@
-# Teste Leitor de Placas
+# Protótipo Leitor de Placas
 
 Este projeto é um protótipo de um leitor de placas de veículos utilizando Python e Tesseract OCR.
 
